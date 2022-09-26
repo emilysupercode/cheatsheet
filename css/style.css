@@ -38,15 +38,19 @@ section article {
     margin: 40px 25px;
 }
 
-section article ul {
+section article ul.article__primarylist {
     border: 2px solid #182747;
     background-color: #8BBCCC;
     color: #182747;
 }
 
-section article ul li {
+section article ul.article__primarylist li.article__primarylist__li {
     padding: 10px 20px;
     list-style-type: none;
+}
+
+section article ul.article__secondarylist li {
+    margin: 5px 0 5px 10px;
 }
 
 h3 {

@@ -14,31 +14,36 @@
     <section>
         <article class="git">
             <h2>Git commands in VS Code Terminal</h2>
-            <ul>
-                <li>
+            <ul class="article__primarylist">
+                <li class="article__primarylist__li">
                     <h3>git init</h3>
                     <p>initializes the connection to linked github account</p>
                 </li>
-                <li>
+                <li class="article__primarylist__li">
                     <h3>git add .</h3>
                     <p>indicates a following commit entry will update a particular file</p>
                 </li>
-                <li>
+                <li class="article__primarylist__li">
                     <h3>git commit -m "message"</h3>
                     <p>use commit name to describe the updates in this new version or to name the version more generally
                     </p>
                 </li>
-                <li>
+                <li class="article__primarylist__li">
                     <h3>copy to repository</h3>
                     <p>*the above is not command text*: copy three lines from box labelled "<span>…or push an existing
                             repository from the
                             command line</span>" in the new repository and paste in Terminal, hit return</p>
                 </li>
-                <li>
+                <li class="article__primarylist__li">
                     <h3>git push</h3>
-                    <p>use to publish local changes to the repository</p>
+                    <p>use to publish local changes to the repository using the following sequence of commands:</p>
+                    <ul class="article__secondarylist">
+                        <li>git add < file> OR git add --all</li>
+                        <li>git commit -m "describe changes"</li>
+                        <li>git push</li>
+                    </ul>
                 </li>
-                <li><a href="./assets/html/git.html">more...</a></li>
+                <li class="article__primarylist__li"><a href="./assets/html/git.html">more...</a></li>
             </ul>
         </article>
     </section>
