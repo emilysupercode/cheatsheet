@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Abyssinica SIL;
+    src: url("../assets/fonts/AbyssinicaSIL-Regular.ttf");
+}
+
+@font-face {
+    font-family: InterTight-Medium;
+    src: url("../assets/fonts/InterTight-Medium.ttf");
+}
+
+h1,
+h2 {
+    font-family: 'InterTight-Medium', sans-serif;
+}
+
+h1 {
+    color: #182747;
+    margin: 10px 25px;
+}
+
+h2 {
+    color: #182747;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Abyssinica SIL', serif;
+    background-color: #F1F1F1;
+}
+
+section article {
+    width: 600px;
+    margin: 40px 25px;
+}
+
+section article ul {
+    border: 2px solid #182747;
+    background-color: #8BBCCC;
+    color: #182747;
+}
+
+section article ul li {
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+section article ul li span {
+    font-style: italic;
+}
