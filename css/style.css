@@ -1,64 +1,168 @@
+/* ==========================
+    general styling
+============================= */
+
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
+/* h2, h3, serif */
 @font-face {
     font-family: Abyssinica SIL;
     src: url("../assets/fonts/AbyssinicaSIL-Regular.ttf");
 }
 
+/* all other text, sans-serif */
 @font-face {
     font-family: InterTight-Medium;
     src: url("../assets/fonts/InterTight-Medium.ttf");
 }
 
-h1,
-h2 {
-    font-family: 'InterTight-Medium', sans-serif;
+/* h1 only, serif*/
+@font-face {
+    font-family: 'silversoul';
+    src: url("../assets/fonts/silversoul.ttf");
 }
 
-h1 {
-    color: #182747;
-    margin: 10px 25px;
+/* ==========================
+    assets repository
+#2A0944
+#3FA796
+#FEC260
+#A10035
+#dddddd all other text
+#1A3C40 text over yellow sections
+
+    
+============================= */
+
+/* ==========================
+    nav
+============================= */
+
+nav {
+    background-color: #2A0944;
+    font-size: 1.2rem;
 }
 
-h2 {
-    color: #182747;
-    margin: 25px;
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh 0;
 }
 
-body {
-    font-family: 'Abyssinica SIL', serif;
-    background-color: #F1F1F1;
+nav ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    font-family: InterTight-Medium, sans-serif;
 }
 
-section article {
-    width: 600px;
-    margin: 40px 25px;
+/* ==========================
+    header
+============================= */
+
+header h1 {
+    background-color: #3FA796;
+    font-family: 'silversoul', serif;
+    color: #dddddd;
+    font-size: 5rem;
+    text-align: center;
+    padding: 5vh 0 4vh 0;
 }
 
-section article {
-    border: 2px solid #182747;
-    background-color: #8BBCCC;
-    color: #182747;
+/* ==========================
+    main general
+============================= */
+
+main section div {
+    display: flex;
+    justify-content: space-between;
 }
 
-section article ul li {
-    padding: 10px 20px;
+main section h2 {
+    padding: 5vh 0 5vh 5vw;
+    text-decoration: underline;
+}
+
+main section div article.notes {
+    width: 40vw;
+    padding-left: 5vw;
+}
+
+main section div article.links {
+    width: 40vw;
+    padding-right: 5vw;
+}
+
+main section div article ul {
     list-style-type: none;
 }
 
-section article ul.article__secondarylist li {
-    margin: 5px 0 5px 10px;
-    /* list-style-type: ; */
+main section div article.notes ul li {
+    padding: 2vh 0;
 }
 
-h3 {
+
+main section:nth-of-type(even) div article.links ul li a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+main section:nth-of-type(odd) div article.links ul li a {
+    text-decoration: none;
+    color: #1A3C40;
+}
+
+a:hover {
     text-decoration: underline;
-    font-size: 16px;
+    font-weight: bolder;
 }
 
-section article ul li span {
-    font-style: italic;
+/* ==========================
+    main specific
+============================= */
+
+main section.main__git {
+    background-color: #FEC260;
+    color: #1A3C40;
+    padding: 5vh 0 4vh 0;
+}
+
+main section:nth-of-type(2) {
+    background-color: #A10035;
+    color: #dddddd;
+    padding: 5vh 0 4vh 0;
+}
+
+main section.main__NAME1 {
+    background-color: #FEC260;
+    color: #1A3C40;
+    padding: 5vh 0 4vh 0;
+}
+
+main section.main__NAME2 {
+    background-color: #A10035;
+    color: #dddddd;
+    padding: 5vh 0 4vh 0;
+}
+
+/* ==========================
+    footer
+============================= */
+
+footer {
+    background-color: #3FA796;
+    color: #dddddd;
+    text-align: right;
+}
+
+footer h3 {
+    padding: 5vh 5vw 5vh 0;
 }
